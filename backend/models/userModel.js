@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema(
       ref: "Role",
       required: true,
     },
+    isActive: { type: Boolean, default: true },
   },
   { timestamps: true }
 );
